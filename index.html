@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="author" content="mikah13">
+    <meta name="description" content="Life App">
+    <meta name="copyright" content="2018 Mike Hoang">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/materialize-social.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <title>Life</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Navbar -->
+        <header>
+            <nav class="pink lighten-2" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Life</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Navbar Link</a></li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="#">Navbar Link</a></li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- -->
+
+
+
+        <!-- Main Content -->
+        <div id="main" class="container">
+            <!-- Header Logo -->
+            <header class="header center">
+                <img src="assets/images/logo.png" id="header-img" />
+            </header>
+            <!-- -->
+
+
+            <section>
+
+
+                <!-- Login -->
+                <div id="login" class="row">
+                    <div class="col s8 offset-s2 ">
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <input id="username" type="text" class="validate" name="username" autocomplete="username">
+                                <label for="username" class="center-align">Username</label>
+                            </div>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" class="validate" name="password" autocomplete="current-password">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 ">
+                                <button class=" btn waves-effect waves-light col s12 pink accent-4" id="login-btn" name="login">Login</button>
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <a class="waves-effect waves-light btn-floating social facebook">
+                           <i class="fa fa-facebook"></i> Sign in with facebook</a>
+                            <a class="waves-effect waves-light btn-floating social google">
+                            <i class="fa fa-google"></i> Sign in with google</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- -->
+
+            </section>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

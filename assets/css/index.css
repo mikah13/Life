@@ -1,0 +1,16 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo-container {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#header-img {
+    width: 10rem;
+    height: auto;
+}
+
+#login {
+    max-width: 550px;
+}
