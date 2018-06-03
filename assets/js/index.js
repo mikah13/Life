@@ -83,7 +83,7 @@ $(document).ready(function() {
     function clearInput() {
         $('#title').val('');
         $('#description').val('');
-        $('#list').val('do');
+        $('#list').prop('selectedIndex',0);
     }
     let storage = new Storage();
     $('.sidenav').sidenav();
