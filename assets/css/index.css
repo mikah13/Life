@@ -13,10 +13,10 @@ body {
 
 .item-title {
     color: green;
-    font-size: 2rem !important;
+    font-size: 1.2rem !important;
 }
 
 .item-desc{
     color:black;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
