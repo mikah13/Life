@@ -11,6 +11,12 @@ body {
     height: auto;
 }
 
-#login {
-    max-width: 550px;
+.item-title {
+    color: green;
+    font-size: 2rem !important;
+}
+
+.item-desc{
+    color:black;
+    font-size: 1.3rem;
 }

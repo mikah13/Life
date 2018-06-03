@@ -26,12 +26,6 @@
         <header>
             <nav class="pink lighten-2" role="navigation">
                 <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Life</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="register.html">Sign Up</a></li>
-                    </ul>
-                    <ul id="nav-mobile" class="sidenav">
-                        <li><a href="register.html">Sign Up</a></li>
-                    </ul>
                     <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
@@ -46,52 +40,77 @@
             </header>
             <!-- -->
 
+            <!-- Modal Structure -->
             <section>
-                <!-- Login -->
-                <div id="login" class="row">
-                    <div class="msg center" style="color:red"></div>
-                    <div class="col s8 offset-s2 ">
-                        <div class="row margin">
-                            <div class="input-field col s12">
-                                <input id="username" type="text" class="validate" name="username" autocomplete="off">
-                                <label for="username" class="center-align">Username</label>
-                            </div>
-                        </div>
-                        <div class="row margin">
-                            <div class="input-field col s12">
-                                <input id="password" type="password" class="validate" name="password" autocomplete="current-password">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
+
+
+                <div id="new" class="modal">
+                    <div class="modal-content">
+                        <h4>New Item</h4>
                         <div class="row">
-                            <div class="input-field col s12 ">
-                                <button class=" btn waves-effect waves-light col s12 pink accent-4" id="login-btn" name="login">Login</button>
-                                <div class="center" style="margin-top:50px">
-                                    <a href="register.html" class="center">Create new account</a>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Title" id="title" type="text" autofocus>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="description" class="materialize-textarea"></textarea>
+                                        <label for="description">Description</label>
+                                    </div>
                                 </div>
 
-                            </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <select id="list">
+                                        <option value="do">To Do</option>
+                                        <option value="buy">To Buy</option>
+                                        </select>
+                                        <label>List</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-light btn pink " id="submit">Submit</a>
+                                </div>
+                            </form>
                         </div>
-                        <div class="row center">
-                            <a class="waves-effect waves-light btn-floating social facebook">
-                           <i class="fa fa-facebook"></i> Sign in with facebook</a>
-                            <a class="waves-effect waves-light btn-floating social google">
-                            <i class="fa fa-google"></i> Sign in with google</a>
-                        </div>
-
                     </div>
+
                 </div>
-                <!-- -->
+                <a class="waves-effect waves-light btn modal-trigger red" href="#new">ADD</a>
             </section>
+            <!-- -->
+
+            <ul class="collection with-header" id="do-list">
+                <li class="collection-header  pink accent-3" style="color:white">
+                    <h4>DO LIST</h4>
+                </li>
+                <div id="do-item">
+
+                </div>
+            </ul>
+            <ul class="collection with-header" id="buy-list">
+                <li class="collection-header  light-blue accent-3" style="color:white">
+                    <h4>BUY LIST</h4>
+                </li>
+                <div id="buy-item">
+
+                </div>
+            </ul>
+
+
+
+
+
         </div>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="assets/js/index.js"></script>
     <script src="assets/js/localStorage.js"></script>
-    <script src="assets/js/login.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
